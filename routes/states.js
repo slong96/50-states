@@ -11,6 +11,15 @@ router.get('/states', function(req, res, next) {
   .catch( err => next(err))
 })
 
+// fetch all 'visited = true'
+router.get('/:visited', function(req, res, next) {
+  let visitedData = true
+  States.findAll({ where: {visited: visitedData}})
+  .then( visit => {
+    return res.json(visit)
+  })
+})
+
 // example: state/Minnesota, get all info about one state.
 router.get('/state/:name', function(req, res, name) {
   let stateName = req.params.name

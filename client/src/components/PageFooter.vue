@@ -12,6 +12,10 @@
         <router-link v-bind:to="{ name: 'AboutSite'}">About this site</router-link>
       </span>
 
+      <span class="nav-link">
+        <router-link v-bind:to="{ name: 'StatesVisited'}">All States Visited</router-link>
+      </span>
+
     </div>
 
     <p>Header image by <a href="https://unsplash.com/photos/o0l-M8W_7wA">Chris Lawton on Unsplash</a></p>

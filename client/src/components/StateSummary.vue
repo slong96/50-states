@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <p>There are a total of {{states.length}} states and the District of Columbia</p>
+  <p>There are a total of {{states.length}} states, including the District of Columbia</p>
   <p>You have visited {{totalVisited}} {{units}}</p>
 
   <p id="all-visited-message" v-if="areAllVisited">You have visited all the states and the District of Columbia</p>
